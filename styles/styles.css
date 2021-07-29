@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+:root{
+
+    --font--1: 'Poppins', sans-serif;
+    --font--2: 'Caveat', cursive;
+    --font--3: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: peru;
+    position: relative;
+    color: #000;
+    font-family: var(--font--1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-list{
+    height: 90vh;
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    border: 13px solid palevioletred;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: url(/images/fondo-hojas.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteiner-elements{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-list-card{
+    font-weight: 300;
+    font-size: 2.2em;
+    font-family: var(--font--2);
+    text-decoration: underline;
+}
+
+.logo-list-card i {
+    color: orange;
+}
+
+.list-icons{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.icon-trash{
+    color: gray;
+    cursor: pointer;
+    font-size: 2.3em;
+    margin: 0 20px;
+}
+
+.icon-selectAll{
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: var(--font--2);
+    cursor: pointer;
+}
+
+.icon-selectAll i {
+    margin: 0 0 0 12.5px;
+    font-size: 26px;
+}
+
+.article{
+    padding: 0 15px;
+}
+
+.work-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 8px;
+}
+
+.content-text-list{
+    display: flex;
+    gap: 1em;
+}
+
+.icon-circle{
+    color: green;
+}
+
+.text-list{
+    color: rgb(23, 156, 23);
+    font-size: 21px;
+    font-weight: bolder;
+    font-family: var(--font--2);
+    text-align: left;
+}
+
+
+.icon-check-alone{
+    font-size: 25px;
+    color: darkgreen;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+/* ACTIVE BTNS */
+
+.icon-check-alone.active{
+    color: greenyellow;
+
+}
+
+.text-list.TextSelected{
+    text-decoration: line-through green 3px ;
+}
+
+.icon-selectAll.active{
+    text-decoration: line-through 3px ;
+}
+
+.modal-trash{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s ease transform;
+    transform: translateX(-100%);
+}
+
+.modal-trash.active{
+    transform: translateX(0%);
+}
+
+.conteiner-modal-trash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteiner-elements-modal{
+    background-color: #fff;
+    height: 50vh;
+    width: 50%;
+    border-radius: 15px;
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.mensaje-modal{
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: red;
+    padding: 0 10px;
+    font-family: var(--font--1);
+}
+
+.homeworks-selected{
+    overflow: scroll;
+    margin: 20px 0 20px;
+    width: 90%;
+    height: 58%;
+    border: 5px dashed #000;
+}
+
+.buttons-modal-trash{
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: green;
+    color: #fff;
+}
+
+.button-red{
+    background-color: #bb2929;
+}
+
+.text-element-trash{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+}
+
+.text-element-trash i {
+    margin: 0 10px 0 0px;
+}

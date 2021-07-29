@@ -1,0 +1,91 @@
+@media (max-width: 769px){
+
+    body{
+        max-height: 100vh;
+
+    }
+
+    .main-list{
+        width: 90%;
+        height: 100vh;
+    }
+
+    .conteiner-elements-modal{
+        width: 70%;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width: 426px ){
+    .main-list{
+        height: auto;
+    }
+
+    .logo-list-card{
+        font-size: 2em;
+    }
+
+    .icon-trash{
+        font-size: 1.7em;
+        margin:  0 0;
+    }
+
+    .modal-trash{
+        height: 110%;
+    }
+
+    .conteiner-elements-modal{
+        width: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 376px ){
+    .main-list{
+        height: auto;
+    }
+
+    .logo-list-card{
+        font-size: 1.5em;
+    }
+
+    .icon-trash{
+        font-size: 1.3em;
+        margin:  0 0;
+    }
+
+    .conteiner-elements-modal{
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .buttons-modal-trash{
+        width: 120px;
+    }
+}
+
+@media (max-width: 321px ){
+    .main-list{
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .logo-list-card{
+        font-size: 1.2em;
+    }
+
+    .icon-trash{
+        font-size: 1.0em;
+        margin:  0 0;
+    }
+
+    .conteiner-elements-modal{
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .buttons-modal-trash{
+        width: 100px;
+    }
+}
